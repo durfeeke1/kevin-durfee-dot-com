@@ -1,0 +1,35 @@
+body {
+  padding: 20px 50px;
+  font: 14px/1.5 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Sans-Serif;
+}
+
+.soundcloud-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.soundcloud-wrapper input {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.soundcloud-wrapper input[type='text'] {
+  font-size: 17px;
+}
+
+.soundcloud-wrapper input[type='submit'] {
+  cursor: pointer;
+  width: 50%;
+}
+
+.soundcloud-player {
+  margin-top: 20px;
+}
+
+.soundcloud-loading {
+  width: 40px;
+  height: 40px;
+  background: url('/images/loading.png');
+}
+
