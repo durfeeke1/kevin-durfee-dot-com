@@ -16,6 +16,8 @@ module.exports = function(app, express, nconf) {
     app.set('view engine', 'ejs');
     app.set('view options', { layout: false });
 
+    app.engine('html', require('ejs').renderFile);
+
     app.use(express.bodyParser());
     app.use(express.methodOverride());
 
