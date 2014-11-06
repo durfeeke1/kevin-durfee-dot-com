@@ -17,13 +17,13 @@
    * Arguments:
    * response -- parsed response data from the SoundCloud search results
    */
-  function displayPlayer(response) {
-    if (response.length === 0 || !response[0].permalink_url) {
+  function displayFirstSong(songResults) {
+    if (songResults.length === 0 || !songResults[0].permalink_url) {
       $("#player").html("No tracks found.");
       return;
     }
 
-    var trackUrl = response[0].permalink_url;
+    var trackUrl = songResults[0].permalink_url;
     SC.oEmbed(trackUrl, { auto_play: true }, function(player) {
       $("#player").html(player.html);
     });
@@ -31,7 +31,6 @@
 
   $(document).ready(function() {
     initializeSoundCloud();
-
     // TODO
   });
 
