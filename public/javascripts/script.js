@@ -29,37 +29,10 @@
     });
   }
 
-  function searchSoundCloud() {
-    event.preventDefault();
-
-    var title = $('#search input[name="title"]').val();
-    var artist = $('#search input[name="artist"]').val();
-
-    if (!title || !artist) {
-      $("#player").html("Enter both a title and artist");
-      return;
-    }
-
-    $("#player").html("Loading...");
-
-    var searchRequest = new XMLHttpRequest();
-    searchRequest.addEventListener("load", function() {
-      var response = JSON.parse(searchRequest.responseText);
-      displayPlayer(response);
-    });
-
-    searchRequest.addEventListener("error", function() {
-      $("#player").html('Error in accessing the server.');
-    });
-
-    var searchParams = "artist=" + encodeURIComponent(artist) + "&title=" + encodeURIComponent(title);
-    searchRequest.open('GET', "/search?" + searchParams);
-    searchRequest.send();
-  }
-
   $(document).ready(function() {
     initializeSoundCloud();
-    $("#search").submit(searchSoundCloud);
+
+    // TODO
   });
 
 })(this, this.document);
