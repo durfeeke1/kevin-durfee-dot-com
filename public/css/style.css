@@ -1,0 +1,45 @@
+body {
+  font: 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Sans-Serif;
+  background-color: #ECF8E0;
+  color: #333;
+  text-align: left;
+}
+
+h1 {
+  font: 64px/1 Satisfy, Georgia, "Times New Roman", Times, Serif;
+  margin-bottom: 25px;
+}
+
+html {
+  height: 100%;
+  border-left: 5px solid #95B657;
+}
+
+#wrapper {
+  width: 80%;
+  padding-left: 40px;
+}
+
+#wrapper input {
+  border: 2px solid #95B657;
+  background: #fafafa;
+  width: 150px;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: 16px;
+}
+
+#wrapper input[type='submit'] {
+  border: 2px solid #95B657;
+  background: #95B657;
+  color: #fafafa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: auto;
+  padding: 8px 20px;
+}
+
+#player {
+  margin-top: 20px;
+}

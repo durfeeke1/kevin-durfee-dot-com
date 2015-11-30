@@ -1,13 +1,11 @@
-"use strict";
 var express = require('express');
+
 var app = express();
+// serve all files out of public folder
+app.use(express.static('public'));
 
-var nconf = require('nconf');
-nconf.argv().env().file({ file: 'local.json' });
+// TODO: soundcloud finder code
 
-require('./settings')(app, express, nconf);
-require('./routes')(app, nconf);
-
-var port = process.env.PORT || nconf.get('port');
+var port = 3000;
 console.log('Listening at 127.0.0.1:' + port);
 app.listen(port);
