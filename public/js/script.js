@@ -1,5 +1,5 @@
-// SoundCloud API key
-var SC_CLIENT_ID = "1c3aeb3f91390630d351f3c708148086";
+// soundcloud api key
+var SC_CLIENT_ID = '1c3aeb3f91390630d351f3c708148086';
 var STATUS_OK = 200;
 
 SC.initialize({ client_id: SC_CLIENT_ID });
