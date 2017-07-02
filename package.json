@@ -8,5 +8,25 @@
   "dependencies": {
     "express": "4.13.3",
     "request": "2.67.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callbackjs/soundcloud-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callbackjs/soundcloud-finder/issues"
+  },
+  "homepage": "https://github.com/callbackjs/soundcloud-finder#readme",
+  "description": ""
 }
