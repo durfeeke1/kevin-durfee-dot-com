@@ -1,5 +1,5 @@
 {
-  "name": "soundcloud-finder",
+  "name": "frame-server",
   "version": "0.0.1",
   "engines": {
     "node": ">= 0.6.19",
@@ -17,16 +17,8 @@
     "lib": "lib"
   },
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/callbackjs/soundcloud-finder.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/callbackjs/soundcloud-finder/issues"
-  },
-  "homepage": "https://github.com/callbackjs/soundcloud-finder#readme",
   "description": ""
 }
