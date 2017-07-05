@@ -7,7 +7,7 @@ function updateText (elementId, description) {
 }
 
 function hideAll () {
-  const tags = ["smartTvDesc","ggDesc","bloctopusDesc","lumaDesc","halDesc","hereOneDesc"];
+  const tags = ["smartTvDesc","ggDesc","bloctopusDesc","lumaDesc","halDesc","hereOneDesc", "frameDesc"];
   for (var i = 0 ; i < tags.length; i++){
     updateText(tags[i],"");
   }
@@ -84,6 +84,15 @@ function showHereOneDesc () {
   updateText("hereOneDesc", hereOneDesc);
 }
 
+function showFrameDesc () {
+  hideAll();
+  const frameDesc = 
+  "Wrote a node server running on a Beaglebone Black to allow users to update a \
+  digital canvas with pictures from a smartphone app app  \
+  ";
+  updateText("frameDesc", frameDesc);
+}
+
 
 document.getElementById("smartTvPic").onclick = showSmartTvDesc;
 document.getElementById("ggPic").onclick = showggDesc;
@@ -91,4 +100,5 @@ document.getElementById("bloctopusPic").onclick = showBloctopusDesc;
 document.getElementById("lumaPic").onclick = showLumaDesc;
 document.getElementById("halPic").onclick = showHalDesc;
 document.getElementById("hereOnePic").onclick = showHereOneDesc;
+document.getElementById("framePic").onclick = showFrameDesc;
 
