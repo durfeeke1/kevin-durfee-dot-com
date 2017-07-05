@@ -3,6 +3,7 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 <style>
@@ -23,17 +24,39 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-   	  <img src="./images/smartTV.jpg" style="width:100%">
-   	  <p> Smart Tv's and Set-Top Boxes</p>
-      <img src="./images/hal.jpg" style="width:100%">
-      <p> Here Active Listening</p>
+    	<div class="container">
+    		<img id="hereOnePic" class="image" src="./images/hereOne.jpg" style="width:100%">
+    		<div class="middle">Here One</div>
+   	 	</div>
+     	<p id="hereOneDesc"> </p>
+     	<div class="container">
+      		<img id="bloctopusPic" class="image" src="./images/bloctopus.jpg" style="width:100%">
+      		<div class="middle">Bloctopus</div>
+      	</div>
+      	<p id="bloctopusDesc"> </p>
+      	<div class="container">
+      		<img id="ggPic" class="image" src="./images/googleGlass.jpg" style="width:100%">
+      		<div class="middle">Smart Glasses</div>
+      	</div>
+      	<p id="ggDesc"> </p>
     </div>
 
     <div class="w3-half">
-      <img src="./images/googleGlass.jpg" style="width:100%">
-      <p> Google Glass </p>
-      <img src="./images/hereOne.jpg" style="width:100%">
-      <p> Here One </p>
+      <div class="container">
+      	 <img id="halPic" class="image" src="./images/hal.jpg" style="width:100%">
+     	 <div class="middle">Here Active Listening</div>
+      </div>
+      <p id="halDesc"> </p>
+      <div class="container">
+   	 	 <img id="lumaPic" class="image" src="./images/luma.jpg" style="width:100%">
+     	 <div class="middle">Luma Therapeutics</div>
+      </div>
+   	  <p id="lumaDesc"> </p>
+      <div class="container">
+   	  	<img id="smartTvPic" class="image" src="./images/smartTV.jpg" style="width:100%">
+     	<div class="middle">Smart TV's</div>
+   	  </div>
+   	  <p id="smartTvDesc"> </p>
     </div>
   </div>
   
@@ -45,7 +68,7 @@ body {font-family: "Raleway", Arial, sans-serif}
   <h2>About</h2>
   <img src="./images/kevinAz.jpg" class="w3-image w3-padding-32" width="300" height="300">
   <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
-    <p>Embedded Systems Engineer</p>
+    <p>Firmware\Electrical\Embedded Systems Engineer</p>
     <p class="w3-large">Contact Info:</p>
     <div class="w3-section">
       <label><b>Name: Kevin Durfee</b></label>
@@ -57,6 +80,8 @@ body {font-family: "Raleway", Arial, sans-serif}
   <br>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
- 
+
+<script src="/js/script.js"></script> 
 </body>
+
 </html>
